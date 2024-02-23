@@ -1,0 +1,28 @@
+name: DanganronpaRoleplayV2
+version: '${project.version}'
+main: me.sialim.danganronparoleplayv2.DanganronpaRoleplayV2
+api-version: '1.20'
+commands:
+  me:
+    usage: /<command> <action>
+    description: Performs an RP action.
+  b:
+    usage: /<command> <message>
+    description: Sends an OOC action.
+  roll:
+    usage: /<command> <integer>
+    description: Rolls a random number between 1 and the parameter.
+  do:
+    usage: /<command> <action>
+  try:
+    usage: /<command> <action>
+  voting:
+    usage: /<command>
+    aliases:
+      - vote
+  dg:
+    usage: /<command> <action>
+    aliases:
+      - core
+      - dgrp
+      - dgcore

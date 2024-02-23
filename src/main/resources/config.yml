@@ -1,0 +1,6 @@
+voting-time-seconds: 60
+
+command-radii:
+  do: 8
+  me: 8
+  try: 6
