@@ -26,3 +26,5 @@ commands:
       - core
       - dgrp
       - dgcore
+  timer:
+    usage: /<command> <int>

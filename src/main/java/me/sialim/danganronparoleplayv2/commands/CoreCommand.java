@@ -5,8 +5,12 @@ import me.sialim.danganronparoleplayv2.files.MessageConfig;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.TabExecutor;
 
-public class CoreCommand implements CommandExecutor {
+import java.util.ArrayList;
+import java.util.List;
+
+public class CoreCommand implements TabExecutor {
 
     DanganronpaRoleplayV2 main;
     MessageConfig messageConfig;
@@ -30,5 +34,15 @@ public class CoreCommand implements CommandExecutor {
             }
         }
         return true;
+    }
+
+    @Override
+    public List<String> onTabComplete(CommandSender commandSender, Command command, String s, String[] strings) {
+        List<String> options = new ArrayList<>();
+        options.add("reload");
+        if (strings.length >= 1) {
+            return options;
+        }
+        return null;
     }
 }
